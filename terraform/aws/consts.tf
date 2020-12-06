@@ -22,17 +22,17 @@ variable "profile" {
 }
 
 variable "region" {
-  default = "us-west-2"
+  default = "us-east-2"
 }
 
 variable "availability_zone" {
   type    = "string"
-  default = "us-west-2c"
+  default = "us-east-2a"
 }
 
 variable "availability_zone2" {
   type    = "string"
-  default = "us-west-2b"
+  default = "us-east-2b"
 }
 
 
@@ -44,7 +44,7 @@ variable ami {
 variable "dbname" {
   type        = "string"
   description = "Name of the Database"
-  default     = "db1"
+  default     = "db11"
 }
 
 variable "password" {
