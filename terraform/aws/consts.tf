@@ -2,11 +2,11 @@
 data "aws_caller_identity" "current" {}
 
 variable "company_name" {
-  default = "acmee"
+  default = "acme"
 }
 
 variable "environment" {
-  default = "dev"
+  default = "dev2"
 }
 
 locals {
@@ -18,21 +18,21 @@ locals {
 
 
 variable "profile" {
-  default = "dev"
+  default = "dev2"
 }
 
 variable "region" {
-  default = "us-center-2"
+  default = "us-eastush-2"
 }
 
 variable "availability_zone" {
   type    = "string"
-  default = "us-center-2a"
+  default = "us-eastush-2a"
 }
 
 variable "availability_zone2" {
   type    = "string"
-  default = "us-center-2b"
+  default = "us-eastush-2b"
 }
 
 
@@ -44,17 +44,17 @@ variable ami {
 variable "dbname" {
   type        = "string"
   description = "Name of the Database"
-  default     = "db121"
+  default     = "db12221"
 }
 
 variable "password" {
   type        = "string"
   description = "Database password"
-  default     = "Aa1234321Bb"
+  default     = "Aa1234322131Bb"
 }
 
 variable "neptune-dbname" {
   type        = "string"
   description = "Name of the Neptune graph database"
-  default     = "neptunedb1"
+  default     = "neptune33db1"
 }
