@@ -12,10 +12,10 @@ resource "aws_db_instance" "default" {
   allocated_storage       = "20"
   username                = "admin"
   password                = var.password
-  apply_immediately       = true
+  apply_immediately       = false
   multi_az                = false
   backup_retention_period = 0
-  storage_encrypted       = false
+  storage_encrypted       = true
   skip_final_snapshot     = true
   monitoring_interval     = 0
   publicly_accessible     = false
