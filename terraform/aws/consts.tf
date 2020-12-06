@@ -27,7 +27,7 @@ variable "region" {
 
 variable "availability_zone" {
   type    = "string"
-  default = "us-west-2a"
+  default = "us-west-2c"
 }
 
 variable "availability_zone2" {
