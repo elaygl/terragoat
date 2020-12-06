@@ -2,7 +2,7 @@
 data "aws_caller_identity" "current" {}
 
 variable "company_name" {
-  default = "acme"
+  default = "acmee"
 }
 
 variable "environment" {
@@ -18,21 +18,21 @@ locals {
 
 
 variable "profile" {
-  default = "default"
+  default = "dev"
 }
 
 variable "region" {
-  default = "us-east-2"
+  default = "us-center-2"
 }
 
 variable "availability_zone" {
   type    = "string"
-  default = "us-east-2a"
+  default = "us-center-2a"
 }
 
 variable "availability_zone2" {
   type    = "string"
-  default = "us-east-2b"
+  default = "us-center-2b"
 }
 
 
@@ -44,7 +44,7 @@ variable ami {
 variable "dbname" {
   type        = "string"
   description = "Name of the Database"
-  default     = "db11"
+  default     = "db121"
 }
 
 variable "password" {
